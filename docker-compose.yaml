@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  plugin:
+    image: node:16
+    volumes:
+      - type: bind
+        source: ./
+        target: /workspace
+    command: bash -c "cd /workspace && yarn && yarn start"
+  grafana:
+    build: 
+      context: ./grafana
+    volumes:
+      - type: bind
+        source: ./dist
+        target: /grafana/plugins
+    ports:
+      - 1984:3000

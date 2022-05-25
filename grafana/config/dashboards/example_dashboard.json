@@ -1,0 +1,85 @@
+{
+    "annotations": {
+        "list": [
+            {
+                "builtIn": 1,
+                "datasource": {
+                    "type": "grafana",
+                    "uid": "-- Grafana --"
+                },
+                "enable": true,
+                "hide": true,
+                "iconColor": "rgba(0, 211, 255, 1)",
+                "name": "Annotations & Alerts",
+                "target": {
+                    "limit": 100,
+                    "matchAny": false,
+                    "tags": [],
+                    "type": "dashboard"
+                },
+                "type": "dashboard"
+            }
+        ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 1,
+    "iteration": 1653515169727,
+    "links": [],
+    "liveNow": false,
+    "panels": [],
+    "schemaVersion": 36,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+        "list": [
+            {
+                "datasource": {
+                    "type": "example-datasource",
+                    "uid": "P895EAE4183D1447E"
+                },
+                "definition": "browser",
+                "hide": 0,
+                "includeAll": true,
+                "multi": true,
+                "name": "Browser",
+                "options": [],
+                "query": "browser",
+                "refresh": 1,
+                "regex": "",
+                "skipUrlSync": false,
+                "sort": 0,
+                "type": "query"
+            },
+            {
+                "datasource": {
+                    "type": "example-datasource",
+                    "uid": "P895EAE4183D1447E"
+                },
+                "definition": "version",
+                "hide": 0,
+                "includeAll": true,
+                "multi": true,
+                "name": "Version",
+                "options": [],
+                "query": "version",
+                "refresh": 1,
+                "regex": "",
+                "skipUrlSync": false,
+                "sort": 0,
+                "type": "query"
+            }
+        ]
+    },
+    "time": {
+        "from": "now-6h",
+        "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "Example",
+    "uid": "example",
+    "version": 1,
+    "weekStart": ""
+}
