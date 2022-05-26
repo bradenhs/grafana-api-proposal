@@ -8,5 +8,6 @@ RUN umask 0002 && \
 RUN cd /grafana/repo && NODE_OPTIONS=--max_old_space_size=8192 make all
 
 COPY ./config /grafana/config
+COPY ./start.sh /grafana/start.sh
 
-CMD /grafana/repo/bin/linux-amd64/grafana-server -config /grafana/config/grafana.ini -homepath /grafana/repo
+CMD /grafana/start.sh
